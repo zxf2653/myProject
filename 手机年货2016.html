@@ -374,7 +374,121 @@ $(function(){
 })
 </script>
 
+<!-- +++++++++++++++++++++++++++++++++++++++++++++ -->
 
+
+
+  
+<div class="adBar">   
+  <ul class="clearfloat">    
+    <li>
+      <a href="http://group.jd.com/thread/20000151/20948249/20000427.htm" target="_blank" clstag="sale|keycount|9055742|1"><img src="http://img10.360buyimg.com/cms/jfs/t2443/307/1029930671/20510/d5a2da97/56403d03Naf767c33.jpg" width="490" height="190" alt="" /></a>
+    </li>    
+    <li>
+      <a href="http://weibo.com/jdshouji" target="_blank" clstag="sale|keycount|9055742|2"><img src="http://img11.360buyimg.com/cms/jfs/t1924/72/1155069898/22719/f7d1dc8/56403d07N63382829.jpg" width="490" height="190" alt="" /></a>
+    </li>    
+    <li>
+      <a href="javascript:;" target="_blank" clstag="sale|keycount|9055742|3"><img src="http://img14.360buyimg.com/cms/jfs/t2539/303/270719382/18603/c390db95/56403d0aN48d0983b.jpg" width="490" height="190" alt="" /></a>
+    </li>    
+    <li>
+      <a href="javascript:;" target="_blank" clstag="sale|keycount|9055742|4"><img src="http://img12.360buyimg.com/cms/jfs/t2323/321/1026260536/19584/4ce4c337/564149eaN931c8d94.jpg" width="490" height="190" alt="" /></a>
+    </li>   
+  </ul>  
+</div>
+
+
+<style>
+.adBar{width: 990px;margin: 0 auto;}
+.adBar ul{margin-right: -20px;}
+.adBar li{float: left;width: 490px;height: 190px;margin:0 10px 10px 0;overflow: hidden;}</style>
+
+<!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+
+<div class="j-module module-brands1601">
+   <div class="mwrap">
+        <div class="jItem">
+         <div class="tit">大牌推荐</div>
+        <ul>
+            #set($count=1)
+            #foreach($!pictureShow in $!picShowList)
+            <li class="f-item f-item-$count #if($count==1) current #end">
+                <div class="sPic"><!-- $!pictureShow.url -->
+                    <a href="javascript:;" $!jshopCommon.clstag($velocityCount)>
+                        <span class="fImg"><img src="$!pictureShow.imageUrl" alt=""></span>
+                    </a>
+                </div>
+                <div class="bPic">
+                    <a href="$!pictureShow.url" $!jshopCommon.clstag($velocityCount) target="_blank">
+                        <span class="fImg"><img src="$!pictureShow.specImageUrl" alt=""></span>
+                    </a>
+                </div>
+            </li>
+            #set ($count=$count+1)
+            #end
+        </ul>
+        <div class="clearfloat"></div>
+    </div>
+    </div>
+</div>
+<script>
+$(function(){
+  jshop.module.ridLazy('.module-brands1601 .bPic,.jSortContent .jDefaultPic');
+  var seletor=$('.module-brands1601'),
+  _item=$('.module-brands1601 .f-item .sPic'),
+  _fitem=$('.module-brands1601 .f-item'),
+  _index = 0;
+      
+  _item.bind('click',function(){
+    nIdx=$(this).closest('.f-item').index();
+    if(_index!=nIdx){
+      _index = nIdx;
+      seletor.find('.f-item').removeClass('current');
+      $(this).closest('.f-item').addClass('current')
+      seletor.find('.bPic').hide();
+      _fitem.eq(_index).find('.bPic').fadeIn(1200); 
+      $('.jSortContent ul').hide().removeClass('current');
+      $('.jSortContent ul').eq(_index).fadeIn(1200).addClass('current');
+    } 
+  })
+
+  _fitem.bind('mouseenter',function(){
+    clearTimeout(_t);
+  }).bind('mouseleave',function(){
+      _t = setTimeout(autotab,5000);
+  });
+  
+  var _t = setTimeout(autotab,5000);
+  function autotab(){
+    _index++;
+    if (_index > _item.size()-1) {
+        _index = 0;
+      } else if (_index < 0) {
+        _index = _item.size()-1;
+      }
+      seletor.find('.f-item').removeClass('current');
+      _fitem.eq(_index).closest('.f-item').addClass('current');
+      seletor.find('.bPic').hide();
+      _fitem.eq(_index).find('.bPic').fadeIn(1200);
+      $('.jSortContent ul').hide().removeClass('current');
+      $('.jSortContent ul').eq(_index).fadeIn(1200).addClass('current');
+      _t = setTimeout(autotab,5000);
+  }
+  
+}) 
+</script>
+
+
+<style>
+.module-brands1601 .mwrap{position: relative;}
+.module-brands1601 .jItem{background-color: #ffd900;position: relative;height: 490px;}
+.module-brands1601 .tit{text-align: center;padding: 18px 0 10px 0;font-size: 22px;font-family: "微软雅黑";font-weight: bold;color: #6b1212;width: 320px;line-height: 1;}
+.module-brands1601 .jItem ul{width: 320px; padding:0 0 0 7px;}
+.module-brands1601 .jItem li{float: left;width:100px;height: 53px;margin: 0 6px 6px 0;background:#fff url(http://img11.360buyimg.com/cms/jfs/t853/64/222820902/5860/54fc0ad5/550bc4d5N2164a1f4.gif) no-repeat center;}
+.module-brands1601 .jItem .f-item-1,.module-brands1601 .jItem .f-item-2,.module-brands1601 .jItem .f-item-3,.module-brands1601 .jItem .f-item-4{width: 153px;height: 95px;}
+.module-brands1601 .bPic{position: absolute;left: 325px;top: 0;width: 686px;height: 490px;display: none;background:#fff url(http://img11.360buyimg.com/cms/jfs/t853/64/222820902/5860/54fc0ad5/550bc4d5N2164a1f4.gif) no-repeat center;}
+.module-brands1601 .current .bPic{display: block;}
+
+</style>
 
 </body>
 </html>
