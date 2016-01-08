@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{margin: 0;padding: 0;}
+	.f-wrap{width: 990px;margin: 0 auto;position: relative;}
+	.abs{position: absolute;}
+	</style>
+	<script src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js?t=1601071935"></script>
+</head>
+<body>
+<style>
+.f-banner{background:#c52549 url(images/tbg_02.jpg) no-repeat top center;height: 763px;}	
+.bTextBar{left:140px;top: 30px;}
+.mText{background: url(images/t3.png) no-repeat;width: 722px;height: 161px;top: 58px;left: 0;}
+.text-1{top: 0px;left: 116px;}
+.txt-1{background-image: url(images/t1.png) ;background-repeat: no-repeat;width: 66px;height: 66px;}
+.txt-1-1{background-position: 0 -13px;left: 0;top: 13px;}
+.txt-1-2{background-position: -101px -2px;left: 101px;top: 2px;}
+.txt-1-3{background-position: -202px 0;left: 202px;top: 0px;}
+.txt-1-4{background-position: -303px -2px;left: 303px;top: 2px;}
+.txt-1-5{background-position: -404px -15px;left: 404px;top: 15px;}
+.text-2{background: url(images/t2.png) no-repeat;width: 775px;height: 118px;top: 188px;left: -22px;}
+
+.light-1{background: url(images/p1.png) no-repeat;width: 124px;height: 209px;top: -12px;left: 0px;}
+.light-2{background: url(images/p2.png) no-repeat;width: 113px;height: 184px;top: -12px;left: 870px;}
+
+.role-1{}
+.role1Mask{width: 379px;height: 534px;overflow: hidden;top: 325px;left: 72px;}
+.joy{background: url(images/joy.png) no-repeat;width: 200px;height: 281px;left: 40px;top: 51px;}
+.joy-light{background: url(images/l1.png) no-repeat;width: 264px;height: 352px;background-size: 100%;}
+.joy-phone{background: url(images/p4.png) no-repeat;width: 135px;height: 240px;left: 193px;top: 48px;}
+.lightWrap{overflow: hidden;width: 54px;height: 75px;top: 74px;left: 47px;}
+.joy-phone-light{background: url(images/p5.png) no-repeat;width: 54px;height: 75px;}
+
+.role-2{top: 298px;left: 337px;}
+.role2Mask{width: 410px;height: 393px;left: 225px;top: 0;overflow: hidden;}
+.nian{background: url(images/nian.png) no-repeat;width: 410px;height: 393px;left: 225px;top: 0;}
+.nian-light{background: url(images/p3.png) no-repeat;width: 250px;height: 97px;left: 0px;top: 99px;}
+.commonPic{background-image: url(images/p6.png);background-repeat: no-repeat;}
+.littetMonster{background-position: -574px -104px;width: 127px;height: 102px;left: 991px;top: 426px;}
+.bloodBar{background: url(images/vs.png) no-repeat center;width: 853px;height: 65px;top: 646px;left: 40px;}
+.joy-bloodBar{background: url(images/xt.png) no-repeat;height: 65px;width: 382px;}
+.nian-bloodBar{background: url(images/xt.png) no-repeat top right;height: 65px;width: 382px;right: 0;top: 0;}
+
+.gift-1{background-position: -131px -231px;width: 184px;height: 94px;left: -184px;top: 461px;}
+.gift-2{background-position: -380px -269px;width: 134px;height: 62px;left: 375px;top: 492px;}
+.gift-3{background-position: -592px -241px;width: 110px;height: 62px;right: -245px;top: 482px;}
+.gift-4{background-position: -424px -145px;width: 66px;height: 58px;right: 101px;top: 430px;z-index: 1}
+.gift-5{background-position: -412px -21px;width: 89px;height: 77px;right: 201px;top: 541px;z-index: 1}
+
+.gameStart{font-size: 70px;width: 100%;line-height: 1;color: #ffe100;font-family: "微软雅黑";top: 480px;left: 0;text-align: center;font-weight: bold;display: none;}
+.joy-stuff-1{background-position:0 -98px;width: 41px;height: 95px;top: 345px;left: 412px;}
+.joy-stuff-2{background-position:-57px -143px;width: 74px;height: 75px;left: 466px;top: 388px;}
+</style>	
+<style>
+.light-1,.light-2,.txt-1,.gifts,.bloodBar,.role-1,.role-2,.nian-light,.joy-light,.joy-phone,.joy-stuff-1,.joy-stuff-2{opacity: 0;filter:alpha(opacity=0);}
+/*,textFly 3s 3s linear infinite*/
+.bTextBar{animation:text 1s linear forwards,textMove 0.5s 2.3s linear forwards;tranform-origin: center bottom;}
+.txt-1{animation:textJump 1s linear forwards;}
+.txt-1-1{animation-delay:0.5s;}
+.txt-1-2{animation-delay:0.7s;}
+.txt-1-3{animation-delay:0.9s;}
+.txt-1-4{animation-delay:1.1s;}
+.txt-1-5{animation-delay:1.3s;}
+.role-1{animation:joyMove .5s 4s linear forwards;}
+.role-2{animation:nianMove .5s 4s linear forwards,nianFly 3s 5s linear infinite;}
+.bloodBar,.gifts{animation:show 1s 4.5s linear forwards;}
+.joy-phone{animation:show 1s 5s linear forwards,phoneRotate 3s 5s linear infinite;}
+.joy-light{animation:show 0.4s 4.5s linear forwards,buring 2s 6s infinite;transform-origin:bottom center;}
+.joy{animation:joy 3s 6s steps(1,start) infinite;}
+.nian{animation:nian 3s 6.5s steps(1,start) infinite;}
+.light-1{animation:show 0.8s 4s linear forwards,light 4s 5s linear infinite;transform-origin:top center;}
+.light-2{animation:show 0.8s 4s linear forwards,light 4s 5.5s linear infinite;transform-origin:top center;}
+.nian-light{animation:nianLight 3s 5s linear infinite;transform-origin:right top;}
+.joy-stuff-1,.joy-stuff-2{animation:stuffDrop 3s 6.7s linear infinite;}
+.joy-stuff-2{animation-delay:6.5s;}
+
+@keyframes text{
+	0%{transform:translateY(-500px)}
+	100%{transform:translateY(120px);}
+}
+@keyframes textMove{
+	0%{transform:translateY(120px)}
+	100%{transform:translateY(0px)}
+}
+@keyframes textFly{
+	0%,100%{transform:translateY(0px)}
+	50%{transform:translateY(10px)}
+}
+
+@keyframes textJump{
+	0%{transform:translateY(-500px);opacity: 1;}
+	95%{transform:translateY(5px) scaleY(0.9);opacity: 1;}
+	100%{transform:translateY(0px) scaleY(1);opacity: 1;}
+}
+@keyframes show{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes joyMove{
+	0%{transform:translateX(200px);opacity: 1;}
+	100%{transform:translateX(0px);opacity: 1;}
+}
+@keyframes nianMove{
+	0%{transform:translateX(-200px);opacity: 1;}
+	100%{transform:translateX(0px);opacity: 1;}
+}
+@keyframes nianFly{
+	0%,50%,100%{transform:translate(0,0);opacity: 1;}
+	20%{transform:translate(0,-10px);opacity: 1;}
+}
+@keyframes joyLight{
+	0%{transform:scale(0);opacity: 1;}
+	100%{transform:scale(1);opacity: 1;}
+}
+@keyframes joy{
+	0%,60%,100%{background-position:-3px 0px;opacity: 1;}
+	20%{background-position:-248px 0px;opacity: 1;}
+	40%{background-position:-489px 0;opacity: 1;}
+}
+@keyframes nian{
+	0%,60%,100%{background-position:0px 0px;opacity: 1;}
+	20%{background-position:-984px 0;opacity: 1;}
+	40%{background-position:-480px -1px;opacity: 1;}
+}
+@keyframes light{
+	0%,100%{transform:rotate(0deg);opacity: 1;}
+	35%{transform:rotate(-8deg);opacity: 1;}
+	70%{transform:rotate(8deg);opacity: 1;}
+}
+@keyframes nianLight{
+	0%,40%,100%{opacity: 0;}
+	25%{opacity: 1;}	
+}
+@keyframes phoneRotate{
+	0%,30%,100%{transform:rotate(0deg);opacity: 1;}
+	20%{transform:rotate(-3deg);opacity: 1;}	
+}
+@keyframes stuffDrop{
+	0%,100%{transform:translate(-30px,0);opacity: 0;}
+	25%{transform:translate(0,0);opacity: 1;}
+	40%{transform:translate(30px,30px);opacity: 0;}
+}
+
+/*@keyframes buring{
+	0%,100%{opacity: 1;transform:rotate(0deg);}
+	50%{opacity: 0.9;transform:rotate(2deg)}
+}*/
+</style>
+
+<div class="f-banner"><div class="f-wrap">
+	<div class="bTextBar abs">
+		<div class="text-1 abs">
+			<div class="abs txt-1 txt-1-1"></div>
+			<div class="abs txt-1 txt-1-2"></div>
+			<div class="abs txt-1 txt-1-3"></div>
+			<div class="abs txt-1 txt-1-4"></div>
+			<div class="abs txt-1 txt-1-5"></div>
+		</div>
+		<div class="mText abs"></div>
+		<div class="text-2 abs"></div>
+	</div>
+	<div class="light">
+		<div class="light-1 abs"></div>
+		<div class="light-2 abs"></div>
+	</div>
+	<div class="gameShow">
+		<div class="gifts">
+			<div class="abs commonPic gift-1"></div>
+			<div class="abs commonPic gift-2"></div>
+			<div class="abs commonPic gift-3"></div>
+			<div class="abs commonPic gift-4"></div>
+			<div class="abs commonPic gift-5"></div>
+		</div>
+	
+		<div class="role1Mask abs"><div class="role-1">
+			<div class="joy-light abs"></div>
+			<div class="joy abs"></div>
+			<div class="joy-phone abs">
+				<div class="lightWrap abs">
+					<div class="joy-phone-light"></div>
+				</div>
+			</div>
+		</div></div>
+		<div class="joy-stuff abs">
+			<div class="joy-stuff-1 commonPic abs"></div>
+			<div class="joy-stuff-2 commonPic abs"></div>
+			<div class="joy-stuff-3 commonPic abs"></div>
+		</div>
+		<div class="role-2 abs"><div class="role2Mask abs">
+			<div class="nian"></div></div>
+			<div class="nian-light abs"></div>
+		</div>
+		<div class="littetMonster abs commonPic"></div>
+			<div class="bloodBar abs">
+			<div class="joy-bloodBar abs"></div>
+			<div class="nian-bloodBar abs"></div>
+		</div>	
+	</div>
+	<div class="gameStart abs"></div>
+</div></div>
+
+<script>
+$(function(){
+	var n=2;
+	function startAnimate(){
+		if(n>0){
+			if(n==2){
+				$('.gameStart').text("Ready!!").fadeIn();
+			}
+			if(n==1){
+				$('.gameStart').text("Go!!").delay(500).fadeOut();
+			}
+			n--;
+			setTimeout(startAnimate,800);
+		}
+		
+	}
+	setTimeout(startAnimate,2500)
+})
+</script>
+
+</body>
+</html>
