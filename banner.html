@@ -9,41 +9,58 @@
 	.abs{position: absolute;}
 	</style>
 	<script src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js?t=1601071935"></script>
+	<link rel="stylesheet" href="">
 </head>
 <body>
+
+<style>.abs{position: absolute;}
+.rel{position: relative;}
+.fr{float:right;}
+.fl{float:left;}
+.fx{position:fixed;}
+.tac{text-align:center;}
+.tar{text-align:right;}
+.f-wrap{width: 990px;margin: 0 auto;position: relative;}
+.clearfloat:after { content: "."; display: block; clear: both; visibility: hidden; height: 0; }
+.clearfloat { overflow: hidden; _zoom: 1; }
+.dib { display: inline-block; *display: inline; *zoom: 1; vertical-align: top; }
+.noText{text-indent:-9999px;font-size:0;}
+.modules_line{margin-bottom:0!important;}
+.userdefined-153704{margin-bottom: 0!important;}</style>	
 <style>
-.f-banner{background:#c52549 url(images/tbg_02.jpg) no-repeat top center;height: 763px;}	
-.bTextBar{left:140px;top: 30px;}
-.mText{background: url(images/t3.png) no-repeat;width: 722px;height: 161px;top: 58px;left: 0;}
+#loader{display: none!important\9;}
+.f-banner{background:#c52549 url(http://img12.360buyimg.com/cms/jfs/t2110/274/1279668101/41823/5dfe7be2/5690d604N992aabfa.jpg) no-repeat top center;height: 707px;overflow: hidden;position: relative;}	
+.bTextBar{left:140px;top: 10px;}
+.mText{background: url(http://img10.360buyimg.com/cms/jfs/t2110/281/1301489952/84372/99c1bb35/56922ca2Nf76e5f36.png) no-repeat;width: 672px;height: 151px;top: 58px;left: 26px;}
 .text-1{top: 0px;left: 116px;}
-.txt-1{background-image: url(images/t1.png) ;background-repeat: no-repeat;width: 66px;height: 66px;}
+.txt-1{background-image: url(http://img14.360buyimg.com/cms/jfs/t2014/114/1324067368/3427/bb5cc0ff/5690d5ffN98aea2c3.png) ;background-repeat: no-repeat;width: 66px;height: 66px;}
 .txt-1-1{background-position: 0 -13px;left: 0;top: 13px;}
 .txt-1-2{background-position: -101px -2px;left: 101px;top: 2px;}
 .txt-1-3{background-position: -202px 0;left: 202px;top: 0px;}
 .txt-1-4{background-position: -303px -2px;left: 303px;top: 2px;}
 .txt-1-5{background-position: -404px -15px;left: 404px;top: 15px;}
-.text-2{background: url(images/t2.png) no-repeat;width: 775px;height: 118px;top: 188px;left: -22px;}
+.text-2{background: url(http://img13.360buyimg.com/cms/jfs/t2530/37/1175555769/21645/a879fc59/5690d601N2f082f97.png) no-repeat;width: 827px;height: 118px;top: 182px;left: -46px;}
 
-.light-1{background: url(images/p1.png) no-repeat;width: 124px;height: 209px;top: -12px;left: 0px;}
-.light-2{background: url(images/p2.png) no-repeat;width: 113px;height: 184px;top: -12px;left: 870px;}
+.light-1{background: url(http://img13.360buyimg.com/cms/jfs/t2011/107/1263216807/5799/50e8be0f/5690d5f9N20916597.png) no-repeat;width: 124px;height: 209px;top: -12px;left: 0px;}
+.light-2{background: url(http://img11.360buyimg.com/cms/jfs/t1846/126/1934313362/5477/97ec6c5c/5690d5f9N3ed41fcc.png) no-repeat;width: 113px;height: 184px;top: -12px;left: 870px;}
 
-.role-1{}
-.role1Mask{width: 379px;height: 534px;overflow: hidden;top: 325px;left: 72px;}
-.joy{background: url(images/joy.png) no-repeat;width: 200px;height: 281px;left: 40px;top: 51px;}
-.joy-light{background: url(images/l1.png) no-repeat;width: 264px;height: 352px;background-size: 100%;}
-.joy-phone{background: url(images/p4.png) no-repeat;width: 135px;height: 240px;left: 193px;top: 48px;}
+.role1Mask{width: 379px;height: 534px;overflow: hidden;top: 270px;left: 72px;}
+.joy{background: url(http://img14.360buyimg.com/cms/jfs/t2464/124/1956622842/31280/1621ca29/5690d5f5N9d0ba70f.png) no-repeat;width: 200px;height: 281px;left: 40px;top: 74px;}
+.joy-light{background: url(http://img11.360buyimg.com/cms/jfs/t2284/308/2036716334/8896/973603f/5690d5f6N89d55e02.png) no-repeat;width: 264px;height: 352px;background-size: 100%;top: 30px;left: 0;}
+.joy-phone{background: url(http://img13.360buyimg.com/cms/jfs/t1864/132/1270401409/9656/83e7909e/5690d5fbN002bd92b.png) no-repeat;width: 135px;height: 240px;left: 193px;top: 63px;}
 .lightWrap{overflow: hidden;width: 54px;height: 75px;top: 74px;left: 47px;}
-.joy-phone-light{background: url(images/p5.png) no-repeat;width: 54px;height: 75px;}
+.joy-phone-light{background: url(http://img12.360buyimg.com/cms/jfs/t2473/125/1969039002/3611/90c3e1/5690d5fbN2bebb85d.png) no-repeat;width: 54px;height: 75px;}
 
-.role-2{top: 298px;left: 337px;}
-.role2Mask{width: 410px;height: 393px;left: 225px;top: 0;overflow: hidden;}
-.nian{background: url(images/nian.png) no-repeat;width: 410px;height: 393px;left: 225px;top: 0;}
-.nian-light{background: url(images/p3.png) no-repeat;width: 250px;height: 97px;left: 0px;top: 99px;}
-.commonPic{background-image: url(images/p6.png);background-repeat: no-repeat;}
+.role-2{top: 266px;left: 337px;}
+.role2Mask{width: 428px;height: 393px;left: 225px;top: 0;overflow: hidden;}
+.nian{background: url(http://img12.360buyimg.com/cms/jfs/t2449/253/2065435984/40595/23bec755/5690d5f8N58f7ed0c.png) no-repeat;width: 428px;height: 393px;left: 225px;top: 0;}
+.nian-light{background: url(http://img13.360buyimg.com/cms/jfs/t2236/315/2009241449/4590/3a08a7bd/5690d5faNc520a12b.png) no-repeat;width: 250px;height: 97px;}
+.nlightMask{width: 250px;height: 97px;left: 0px;top: 99px;overflow: hidden;}
+.commonPic{background-image: url(http://img10.360buyimg.com/cms/jfs/t2032/349/1936314907/26527/e514658f/5690d5fdNf13147f0.png);background-repeat: no-repeat;}
 .littetMonster{background-position: -574px -104px;width: 127px;height: 102px;left: 991px;top: 426px;}
-.bloodBar{background: url(images/vs.png) no-repeat center;width: 853px;height: 65px;top: 646px;left: 40px;}
-.joy-bloodBar{background: url(images/xt.png) no-repeat;height: 65px;width: 382px;}
-.nian-bloodBar{background: url(images/xt.png) no-repeat top right;height: 65px;width: 382px;right: 0;top: 0;}
+.bloodBar{background: url(http://img12.360buyimg.com/cms/jfs/t2116/18/2032156341/543/8dfb153e/5690d606N1c31c921.png) no-repeat center;width: 853px;height: 65px;top: 621px;left: 88px;}
+.joy-bloodBar{background: url(http://img13.360buyimg.com/cms/jfs/t2347/122/1299744675/6359/a0186077/5690d608N602c7a2f.png) no-repeat;height: 65px;width: 382px;}
+.nian-bloodBar{background: url(http://img13.360buyimg.com/cms/jfs/t2347/122/1299744675/6359/a0186077/5690d608N602c7a2f.png) no-repeat top right;height: 65px;width: 382px;right: 0;top: 0;}
 
 .gift-1{background-position: -131px -231px;width: 184px;height: 94px;left: -184px;top: 461px;}
 .gift-2{background-position: -380px -269px;width: 134px;height: 62px;left: 375px;top: 492px;}
@@ -52,43 +69,266 @@
 .gift-5{background-position: -412px -21px;width: 89px;height: 77px;right: 201px;top: 541px;z-index: 1}
 
 .gameStart{font-size: 70px;width: 100%;line-height: 1;color: #ffe100;font-family: "微软雅黑";top: 480px;left: 0;text-align: center;font-weight: bold;display: none;}
-.joy-stuff-1{background-position:0 -98px;width: 41px;height: 95px;top: 345px;left: 412px;}
-.joy-stuff-2{background-position:-57px -143px;width: 74px;height: 75px;left: 466px;top: 388px;}
+.stuff{width: 107px;height: 107px;background: url(http://img14.360buyimg.com/cms/jfs/t2386/76/1302825325/9780/91a054bf/5690d5f3N5ba9652b.png) no-repeat;}
+.joy-stuff{top: -10px;left: 0;}
+.joy-stuff-1{top: 345px;left: 412px;}
+.joy-stuff-2{left: 466px;top: 388px;}
+.joy-stuff-3{left: 562px;top: 516px;}
+.joy-stuff-4{left: 843px;top: 448px;}
+.joy-stuff-5{left: 782px;top: 283px;}
+.bloodWrap{width: 322px;height: 20px;overflow: hidden;top: 21px;left: 8px;border-radius: 6px 0 0 6px;}
+.nblood{background: url(http://img10.360buyimg.com/cms/jfs/t2443/152/1300562112/289/fda944a/5690d5f2Nde04a62c.png) no-repeat right center;height: 20px;width: 0;}
+
+.boomBar{top: 127px;left: -103px;}
+.boom{background:url(http://img11.360buyimg.com/cms/jfs/t1999/26/1282680768/5106/2a679cce/5690d60bNd35b1ef3.png) no-repeat; }
+.boom-1{background-position: 0px -35px;width: 76px;height: 80px;left: 0;top: 35px;}
+.boom-2{background-position: -479px -184px;width: 42px;height: 42px;left: 479px;top: 184px;}
+.boom-3{background-position: -593px -203px;width: 29px;height: 28px;left: 593px;top: 203px;}
+.boom-4{background-position: -1140px 0;width: 105px;height: 96px;left: 1140px;top: 0;}
+.boom-5{background-position: -1097px -122px;width: 45px;height: 44px;left: 1097px;top: 122px;}
+
+.chipsBar{top: 353px;left: 0;}
+.chip{background: url(http://img11.360buyimg.com/cms/jfs/t1852/129/1969246275/8790/e0329df6/5690d5ffN04e886d8.png) no-repeat;}
+.chip-2{background-position: 0px -172px;width: 127px;height:82px;left: 0px;top: 172px;}
+.chip-6{background-position: -320px -197px;width: 268px;height: 56px;left: 320px;top: 197px;}
+.chip-7{background-position: -917px -170px;width: 165px;height: 102px;left: 917px;top: 170px;}
 </style>	
+<style>.loader{position:absolute;z-index:9;overflow:hidden;left:0;top:0;right:0;bottom:0;width:100%;height:100%;color:#fff;background-color: #b80128;}
+  .loader-graph{overflow:hidden;position:absolute;left:50%;top:50%;width:400px;height:120px;margin:-140px 0 0 -200px;}
+  .loader-graph-main{height:5px;background:url(http://img12.360buyimg.com/cms/jfs/t2233/330/1124825134/18021/99aefd09/5641a054Nf0bc29c6.gif) no-repeat center;width: 100%;height: 120px;}
+  .loader-progress{width:130px;height:112px;line-height:136px;font-weight:bold;font-size:20px;text-align:center;position: absolute;left: 50%;top: 50%;margin: -56px 0 0 -65px;}
+  .loader-text{position:absolute;left:0;top:50%;margin:40px 0 0 8px;width:100%;line-height:24px;font-size:20px;text-align:center;font-weight: bold;color: #6b1212;font-family: "微软雅黑";}
+  .scaleOut{opacity:0;-webkit-transition:all 1s;}
+</style>
+
+
+<div class="f-banner">
+	<div id="loader" ontouchmove="return !1" class="loader">   
+		<div id="progress" class="loader-progress">    
+			0%   
+		</div>   
+		<div class="loader-graph">    
+			<div class="loader-graph-main">    
+			</div>   
+		</div>   
+		<p class="loader-text"> 
+		</p>  
+	</div>  
+	<div class="f-wrap">
+	<div class="bTextBar abs"><div class="textMove abs">
+		<div class="text-1 abs">
+			<div class="abs txt-1 txt-1-1"></div>
+			<div class="abs txt-1 txt-1-2"></div>
+			<div class="abs txt-1 txt-1-3"></div>
+			<div class="abs txt-1 txt-1-4"></div>
+			<div class="abs txt-1 txt-1-5"></div>
+		</div>
+		<div class="mText abs"></div>
+		<div class="text-2 abs"></div>
+	</div></div>
+	<div class="light">
+		<div class="light-1 abs"></div>
+		<div class="light-2 abs"></div>
+	</div>
+	<div class="gameShow">
+		<div class="gifts">
+			<div class="abs commonPic gift-1"></div>
+			<div class="abs commonPic gift-2"></div>
+			<div class="abs commonPic gift-3"></div>
+		</div>
+	
+		<div class="role1Mask abs"><div class="role-1">
+			<div class="joy-light abs"></div>
+			<div class="joy abs"></div>
+			<div class="joy-phone abs">
+				<div class="lightWrap abs">
+					<div class="joy-phone-light"></div>
+				</div>
+			</div>
+		</div></div>
+		<div class="role-2 abs"><div class="role2Mask abs"><div class="nianMove abs">
+			<div class="nian"></div></div></div>
+			<div class="nlightMask abs"><div class="nian-light"></div></div>
+		</div>
+		<div class="boomBar abs">
+			<div class="abs boom boom-1"></div>
+			<div class="abs boom boom-2"></div>
+			<div class="abs boom boom-3"></div>
+			<div class="abs boom boom-4"></div>
+			<div class="abs boom boom-5"></div>
+		</div>
+		<div class="chipsBar abs">
+			<div class="abs chip chip-2"></div>
+			<div class="abs chip chip-6"></div>
+			<div class="abs chip chip-7"></div>
+		</div>
+		<div class="joy-stuff abs">
+			<div class="joy-stuff-1 abs"><div class="stuff"></div></div>
+			<div class="joy-stuff-2 abs"><div class="stuff"></div></div>
+			<div class="joy-stuff-3 abs"><div class="stuff"></div></div>
+			<div class="joy-stuff-4 abs"><div class="stuff"></div></div>
+			<div class="joy-stuff-5 abs"><div class="stuff"></div></div>
+		</div>
+		<div class="littetMonster abs commonPic"></div>
+		<div class="bloodBar abs">
+			<div class="joy-bloodBar abs"></div>
+			<div class="nian-bloodBar abs">
+				<div class="bloodWrap abs">
+					<div class="nblood"></div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="gameStart abs"></div>
+</div></div>
+
+<script>
+!function(undefined){
+    var PreLoad=function(a,b){var c=b||{};this.source=a,this.count=0,this.total=a.length,this.onload=c.onload,this.prefix=c.prefix||"",this.init()};PreLoad.prototype.init=function(){var a=this;a.source.forEach(function(b){var c=b.substr(b.lastIndexOf(".")+1).toLowerCase(),d=a.prefix+b;switch(c){case"js":a.script.call(a,d);break;case"css":a.stylesheet.call(a,d);break;case"svg":case"jpg":case"gif":case"png":case"jpeg":a.image.call(a,d)}})},PreLoad.prototype.getProgress=function(){return Math.round(this.count/this.total*100)},PreLoad.prototype.image=function(a){var b=document.createElement("img");this.load(b,a),b.src=a},PreLoad.prototype.stylesheet=function(a){var b=document.createElement("link");this.load(b,a),b.rel="stylesheet",b.type="text/css",b.href=a,document.head.appendChild(b)},PreLoad.prototype.script=function(a){var b=document.createElement("script");this.load(b,a),b.type="text/javascript",b.src=a,document.head.appendChild(b)},PreLoad.prototype.load=function(a,b){var c=this;a.onload=a.onerror=a.onabort=function(a){c.onload&&c.onload({count:++c.count,total:c.total,item:b,type:a.type})}
+    };
+
+    var n=2,
+	m= 322/40,
+	i=1;
+	function startAnimate(){
+		if(n>0){
+			if(n==2){
+				$('.gameStart').text("Ready!!").fadeIn();
+			}
+			if(n==1){
+				$('.gameStart').text("Go!!").delay(500).fadeOut();
+			}
+			n--;
+			setTimeout(startAnimate,800);
+		}
+		
+	}
+	
+	function bloodAnimate(){
+		var _blood=$('.nblood');
+		if(i-1<=m){
+			var _width=i*40;
+			_blood.animate({'width':_width});
+			i++;
+		}else if(i>m){
+			i=1;
+			_blood.animate({'width':"0px"});
+		}
+		setTimeout(bloodAnimate,3000);
+	}
+
+	function checkNavigator(){
+		var b_name = navigator.appName; 
+		var b_version = navigator.appVersion; 
+		var version = b_version.split(";"); 
+		var trim_version = version[1].replace(/[]/g, ""); 
+		if (b_name == "Microsoft Internet Explorer") { 
+			if (trim_version != "MSIE7.0" || trim_version != "MSIE6.0" || trim_version != "MSIE8.0") {
+        		new PreLoad(tasks, {onload: loading});
+			}
+		}
+		else{
+			new PreLoad(tasks, {onload: loading});
+		}
+	}
+
+    var tasks = [
+      'http://img11.360buyimg.com/cms/jfs/t1999/26/1282680768/5106/2a679cce/5690d60bNd35b1ef3.png','http://img13.360buyimg.com/cms/jfs/t2347/122/1299744675/6359/a0186077/5690d608N602c7a2f.png','http://img12.360buyimg.com/cms/jfs/t2116/18/2032156341/543/8dfb153e/5690d606N1c31c921.png','http://img12.360buyimg.com/cms/jfs/t2110/274/1279668101/41823/5dfe7be2/5690d604N992aabfa.jpg','http://img12.360buyimg.com/cms/jfs/t2026/177/2028125598/21377/f52639a5/5690d602N82adc059.png','http://img13.360buyimg.com/cms/jfs/t2530/37/1175555769/21645/a879fc59/5690d601N2f082f97.png','http://img14.360buyimg.com/cms/jfs/t2014/114/1324067368/3427/bb5cc0ff/5690d5ffN98aea2c3.png','http://img11.360buyimg.com/cms/jfs/t1852/129/1969246275/8790/e0329df6/5690d5ffN04e886d8.png','http://img10.360buyimg.com/cms/jfs/t2494/130/1332748090/2675/3cf467bb/5690d5feNb71473c4.png','http://img10.360buyimg.com/cms/jfs/t2032/349/1936314907/26527/e514658f/5690d5fdNf13147f0.png','http://img12.360buyimg.com/cms/jfs/t2473/125/1969039002/3611/90c3e1/5690d5fbN2bebb85d.png','http://img13.360buyimg.com/cms/jfs/t1864/132/1270401409/9656/83e7909e/5690d5fbN002bd92b.png','http://img13.360buyimg.com/cms/jfs/t2236/315/2009241449/4590/3a08a7bd/5690d5faNc520a12b.png','http://img11.360buyimg.com/cms/jfs/t1846/126/1934313362/5477/97ec6c5c/5690d5f9N3ed41fcc.png','http://img13.360buyimg.com/cms/jfs/t2011/107/1263216807/5799/50e8be0f/5690d5f9N20916597.png','http://img12.360buyimg.com/cms/jfs/t2449/253/2065435984/40595/23bec755/5690d5f8N58f7ed0c.png','http://img11.360buyimg.com/cms/jfs/t2284/308/2036716334/8896/973603f/5690d5f6N89d55e02.png','http://img14.360buyimg.com/cms/jfs/t2464/124/1956622842/31280/1621ca29/5690d5f5N9d0ba70f.png','http://img14.360buyimg.com/cms/jfs/t2386/76/1302825325/9780/91a054bf/5690d5f3N5ba9652b.png','http://img10.360buyimg.com/cms/jfs/t2443/152/1300562112/289/fda944a/5690d5f2Nde04a62c.png'
+
+
+    ];
+    var $progress = document.getElementById('progress');
+
+    function loading(load) {
+        var count = load.count
+        var total = load.total
+        $progress && ($progress.innerHTML = Math.round(100*count/total) + '%')
+        var _w=400*count/total;
+
+        if(count === total) return complete()
+    }
+	
+	function changeText(){
+		var nDate=new Date().toLocaleDateString();
+		$('.bannerText1601 li').each(function(){
+			var _t=$(this).find('.bgTime').text();
+			if(_t==nDate){
+				var _addr=$(this).find('.bgAddr').text();
+				$('.f-banner .text-2').css({'background-image':'url('+_addr+')'});
+			}
+		})
+	}
+
+    function next(el, fn) {
+        el.className += ' scaleOut'
+        setTimeout(function(){
+            el.parentNode.removeChild(el)
+            fn && fn();
+			$('#loader').hide();
+        }, 600)
+        changeText();
+    }
+
+    function complete() {
+        var $loader = document.getElementById('loader')
+
+        next($loader, function() {
+            $('.f-banner').addClass('active');
+            setTimeout(startAnimate,2000);
+        	setTimeout(bloodAnimate,7000);
+        })
+    }
+
+    checkNavigator();
+
+}();
+</script>
+
+
+
 <style>
-.light-1,.light-2,.txt-1,.gifts,.bloodBar,.role-1,.role-2,.nian-light,.joy-light,.joy-phone,.joy-stuff-1,.joy-stuff-2{opacity: 0;filter:alpha(opacity=0);}
-/*,textFly 3s 3s linear infinite*/
-.bTextBar{animation:text 1s linear forwards,textMove 0.5s 2.3s linear forwards;tranform-origin: center bottom;}
-.txt-1{animation:textJump 1s linear forwards;}
-.txt-1-1{animation-delay:0.5s;}
-.txt-1-2{animation-delay:0.7s;}
-.txt-1-3{animation-delay:0.9s;}
-.txt-1-4{animation-delay:1.1s;}
-.txt-1-5{animation-delay:1.3s;}
-.role-1{animation:joyMove .5s 4s linear forwards;}
-.role-2{animation:nianMove .5s 4s linear forwards,nianFly 3s 5s linear infinite;}
-.bloodBar,.gifts{animation:show 1s 4.5s linear forwards;}
-.joy-phone{animation:show 1s 5s linear forwards,phoneRotate 3s 5s linear infinite;}
-.joy-light{animation:show 0.4s 4.5s linear forwards,buring 2s 6s infinite;transform-origin:bottom center;}
-.joy{animation:joy 3s 6s steps(1,start) infinite;}
-.nian{animation:nian 3s 6.5s steps(1,start) infinite;}
-.light-1{animation:show 0.8s 4s linear forwards,light 4s 5s linear infinite;transform-origin:top center;}
-.light-2{animation:show 0.8s 4s linear forwards,light 4s 5.5s linear infinite;transform-origin:top center;}
-.nian-light{animation:nianLight 3s 5s linear infinite;transform-origin:right top;}
-.joy-stuff-1,.joy-stuff-2{animation:stuffDrop 3s 6.7s linear infinite;}
-.joy-stuff-2{animation-delay:6.5s;}
+.light-1,.light-2,.txt-1,.bloodBar,.role-1,.role-2,.nian-light,.joy-light,.joy-phone,.stuff,.chip-2,.chip-6,.chip-7,.boom-1,.boom-2,.boom-3,.boom-4,.boom-5,.gifts,.bTextBar,.littetMonster{opacity: 0;opacity: 1\9;}
+
+.active .bTextBar{animation:text 0.5s linear forwards;tranform-origin: center bottom;}
+.active .textMove{animation:textMove 0.5s 2.1s linear forwards,textFly 4s 3s linear infinite;}
+.active .txt-1{animation:textJump 0.8s linear forwards;}
+.active .txt-1-1{animation-delay:0.3s;}
+.active .txt-1-2{animation-delay:0.5s;}
+.active .txt-1-3{animation-delay:0.7s;}
+.active .txt-1-4{animation-delay:0.9s;}
+.active .txt-1-5{animation-delay:1.1s;}
+.active .role-1{animation:joyMove .5s 3.5s linear forwards;}
+.active .role-2{animation:nianMove .5s 3.5s linear forwards,nianFly 3s 5s linear infinite;}
+.active .bloodBar,.active .gifts,.active .littetMonster{animation:show 1s 4s linear forwards;}
+.active .joy-phone{animation:show 1s 4s linear forwards,phoneRotate 3s 5s linear infinite;}
+.active .joy-light{animation:show 0.4s 4s linear forwards,buring 2s 5.5s infinite;transform-origin:bottom center;}
+.active .joy{animation:joy 3s 6s steps(1,start) infinite;}
+.active .nian{animation:nian 3s 6.5s steps(1,start) infinite;}
+.active .light-1{animation:show 0.8s 4s linear forwards,light 4s 5s linear infinite;transform-origin:top center;}
+.active .light-2{animation:show 0.8s 4s linear forwards,light 4s 5.5s linear infinite;transform-origin:top center;}
+.active .nian-light{animation:nianLight 3s 5s linear infinite;transform-origin:right top;}
+.active .stuff{animation:boom 3s 6.5s steps(1,start) infinite;}
+.active .joy-stuff-1 .stuff,.active .joy-stuff-4 .stuff{animation:boom2 3s 6.5s steps(1,start) infinite;}
+.active .joy-stuff-1,.active .joy-stuff-2,.active .joy-stuff-3,.active .joy-stuff-4,.active .joy-stuff-5{animation:stuffDrop 3s 6s linear infinite;}
+.active .chip-2,.active .chip-6,.active .chip-7{animation:chipFly 1s 7s linear forwards;}
+.active .boom-1,.active .boom-2,.active .boom-3,.active .boom-4,.active .boom-5{animation:boomScale 5s 7s linear infinite;}
+.active .boom-2{animation-delay:7.2s;}
+.active .boom-3{animation-delay:7.4s;}
+.active .boom-4{animation-delay:7.6s;}
+.active .boom-5{animation-delay:7.8s;}
 
 @keyframes text{
-	0%{transform:translateY(-500px)}
-	100%{transform:translateY(120px);}
+	0%{transform:translateY(-500px);opacity: 1;}
+	90%{transform:translateY(150px);opacity: 1;}
+	100%{transform:translateY(120px);opacity: 1;}
 }
 @keyframes textMove{
-	0%{transform:translateY(120px)}
-	100%{transform:translateY(0px)}
+	0%{transform:translateY(0px);opacity: 1;}
+	100%{transform:translateY(-120px);opacity: 1;}
 }
 @keyframes textFly{
-	0%,100%{transform:translateY(0px)}
-	50%{transform:translateY(10px)}
+	0%,100%{transform:translateY(-120px);opacity: 1;}
+	50%{transform:translateY(-110px);opacity: 1;}
 }
 
 @keyframes textJump{
@@ -112,9 +352,10 @@
 	0%,50%,100%{transform:translate(0,0);opacity: 1;}
 	20%{transform:translate(0,-10px);opacity: 1;}
 }
-@keyframes joyLight{
-	0%{transform:scale(0);opacity: 1;}
-	100%{transform:scale(1);opacity: 1;}
+@keyframes boomScale{
+	0%,100%{transform:scale(0) ;opacity: 0;}
+	10%{transform:scale(1) ;opacity: 1;}
+	20%{transform:scale(1.5) ;opacity: 0;}
 }
 @keyframes joy{
 	0%,60%,100%{background-position:-3px 0px;opacity: 1;}
@@ -122,9 +363,10 @@
 	40%{background-position:-489px 0;opacity: 1;}
 }
 @keyframes nian{
-	0%,60%,100%{background-position:0px 0px;opacity: 1;}
-	20%{background-position:-984px 0;opacity: 1;}
-	40%{background-position:-480px -1px;opacity: 1;}
+	0%,50%,100%{background-position:0px 0px;opacity: 1;}
+	15%{background-position:-951px 0;opacity: 1;}
+	40%{background-position:-1426px -1px;opacity: 1;}
+	50%{background-position:-475px -1px;opacity: 1;}
 }
 @keyframes light{
 	0%,100%{transform:rotate(0deg);opacity: 1;}
@@ -132,8 +374,10 @@
 	70%{transform:rotate(8deg);opacity: 1;}
 }
 @keyframes nianLight{
-	0%,40%,100%{opacity: 0;}
-	25%{opacity: 1;}	
+	0%,100%{transform:translate(0px,0);opacity: 0;}
+	10%,30%{transform:translate(0px,0);opacity: 1;}
+	40%{transform:translate(-200px,50px);opacity: 1;}
+	45%{transform:translate(-200px,50px);opacity: 0;}
 }
 @keyframes phoneRotate{
 	0%,30%,100%{transform:rotate(0deg);opacity: 1;}
@@ -142,86 +386,37 @@
 @keyframes stuffDrop{
 	0%,100%{transform:translate(-30px,0);opacity: 0;}
 	25%{transform:translate(0,0);opacity: 1;}
-	40%{transform:translate(30px,30px);opacity: 0;}
+	40%{transform:translate(30px,30px);opacity: 1;}
+	80%{transform:translate(30px,30px);opacity: 0;}
+}
+@keyframes boom{
+	0%,60%,100%{background-position:0px 0px;opacity: 0;}
+	15%{background-position:0px 0px;opacity: 1;}
+	20%{background-position:-232px 0px;opacity: 1;}
+	25%{background-position:-516px 0px;opacity: 1;}
+	30%{background-position:-788px 0px;opacity: 1;}
+	35%{background-position:-1063px 0px;opacity: 1;}
+	40%{background-position:-1270px 0px;opacity: 1;}
+}
+@keyframes boom2{
+	0%,60%,100%{background-position:-1424px 0px;opacity: 0;}
+	15%{background-position:-1424px 0px;opacity: 1;}
+	20%{background-position:-232px 0px;opacity: 1;}
+	25%{background-position:-516px 0px;opacity: 1;}
+	30%{background-position:-788px 0px;opacity: 1;}
+	35%{background-position:-1063px 0px;opacity: 1;}
+	40%{background-position:-1270px 0px;opacity: 1;}
 }
 
-/*@keyframes buring{
-	0%,100%{opacity: 1;transform:rotate(0deg);}
-	50%{opacity: 0.9;transform:rotate(2deg)}
-}*/
+@keyframes chipFly{
+	0%{transform:translate(0,-100px);opacity: 0;}
+	20%,100%{transform:translate(0,0px);opacity: 1;}
+}
+
+@keyframes buring{
+	0%,100%{opacity: 1;transform:rotate(0deg) scaleY(1);}
+	50%{opacity: 0.9;transform:rotate(2deg) scaleY(1.05)}
+}
 </style>
-
-<div class="f-banner"><div class="f-wrap">
-	<div class="bTextBar abs">
-		<div class="text-1 abs">
-			<div class="abs txt-1 txt-1-1"></div>
-			<div class="abs txt-1 txt-1-2"></div>
-			<div class="abs txt-1 txt-1-3"></div>
-			<div class="abs txt-1 txt-1-4"></div>
-			<div class="abs txt-1 txt-1-5"></div>
-		</div>
-		<div class="mText abs"></div>
-		<div class="text-2 abs"></div>
-	</div>
-	<div class="light">
-		<div class="light-1 abs"></div>
-		<div class="light-2 abs"></div>
-	</div>
-	<div class="gameShow">
-		<div class="gifts">
-			<div class="abs commonPic gift-1"></div>
-			<div class="abs commonPic gift-2"></div>
-			<div class="abs commonPic gift-3"></div>
-			<div class="abs commonPic gift-4"></div>
-			<div class="abs commonPic gift-5"></div>
-		</div>
-	
-		<div class="role1Mask abs"><div class="role-1">
-			<div class="joy-light abs"></div>
-			<div class="joy abs"></div>
-			<div class="joy-phone abs">
-				<div class="lightWrap abs">
-					<div class="joy-phone-light"></div>
-				</div>
-			</div>
-		</div></div>
-		<div class="joy-stuff abs">
-			<div class="joy-stuff-1 commonPic abs"></div>
-			<div class="joy-stuff-2 commonPic abs"></div>
-			<div class="joy-stuff-3 commonPic abs"></div>
-		</div>
-		<div class="role-2 abs"><div class="role2Mask abs">
-			<div class="nian"></div></div>
-			<div class="nian-light abs"></div>
-		</div>
-		<div class="littetMonster abs commonPic"></div>
-			<div class="bloodBar abs">
-			<div class="joy-bloodBar abs"></div>
-			<div class="nian-bloodBar abs"></div>
-		</div>	
-	</div>
-	<div class="gameStart abs"></div>
-</div></div>
-
-<script>
-$(function(){
-	var n=2;
-	function startAnimate(){
-		if(n>0){
-			if(n==2){
-				$('.gameStart').text("Ready!!").fadeIn();
-			}
-			if(n==1){
-				$('.gameStart').text("Go!!").delay(500).fadeOut();
-			}
-			n--;
-			setTimeout(startAnimate,800);
-		}
-		
-	}
-	setTimeout(startAnimate,2500)
-})
-</script>
-
 </body>
 </html>
