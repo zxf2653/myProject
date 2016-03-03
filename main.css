@@ -1,0 +1,188 @@
+.clearfloat:after { content: "."; display: block; clear: both; visibility: hidden; height: 0; }
+.clearfloat { overflow: hidden; _zoom: 1; }
+.dib{display: inline-block;*display: inline;*zoom:1;vertical-align: top;}
+.del{text-decoration: line-through;}
+.tac{text-align: center;}
+.textupper{text-transform: uppercase;}
+.mainBox a{cursor: pointer;}
+
+.mainBox{font-family: Arial;font-size: 12px;line-height: 1.2;}
+.header,.nav,.hyperchannel,.footer{min-width: 1200px;}
+.floor-main{overflow: hidden;position: relative;background-color: #fff;}
+
+.it-banner{height:400px;overflow: hidden;position: relative;min-width: 1200px;width: 100%; }
+.it-banner .a-img{background-repeat: no-repeat;background-position: center;height: 400px;width: 100%;display: block;/*z-index: 2;*/background-color: #f76d75;}
+.it-banner .list-b li{position: absolute;left: 0;top: 0;height: 400px;width: 100%;}
+.it-banner .fbtn{display: block;width: 36px;height: 66px;position: absolute;top: 50%;margin-top: -33px;background: url(images/btn.png) no-repeat;z-index: 3}
+.it-banner .b-control-bar{height: 100%;position: absolute;top: 0;left: 50%;margin: 0 0 0 -600px;}
+.it-banner .b-left{background-position: 0 0;left: 0;}
+.it-banner .b-right{background-position: 0 -69px;right: 0;}
+.it-banner .list-b-num{position: absolute;bottom: 10px;width: 100%;left: 0;height: 15px;z-index: 3;text-align: center;}
+.it-banner .list-b-num li{width: 12px;height: 12px;margin: 0 8px;}
+.it-banner .list-b-num a{display: block;background: url(images/btn.png) no-repeat -11px -184px;width: 12px;height: 12px;}
+.it-banner .list-b-num .current a{background-position: -10px -154px;}
+
+.floor-tit{margin: 30px 0;}
+.floor-main-tit{font-size: 36px;color: #076160;font-weight: normal;text-transform: uppercase;text-align: center;height: 65px;line-height: 65px;}
+.floor-tit .tit-desc{font-size: 20px;text-transform: uppercase;color: #076160;text-align: center;}
+.floor-tit .f-icon{width: 60px;height: 60px;background: url(images/is.png) no-repeat;position: relative;}
+.floor-tit .jIcon{width: 42px;display: block;position: absolute;}
+.f-icon-coupon{height: 26px;top: 18px;left: 11px;}
+.f-icon-recommend{background-position: 0 -32px;height: 36px;left: 11px;top: 10px;}
+.f-icon-today-deals{background-position: -1px -85px;height: 36px;top: 13px;left: 10px;}
+.f-icon-brand-events{background-position: 0 -133px;height: 34px;top: 11px;left: 12px;}
+.f-icon-smartphone{background-position: 0 -193px;height: 31px;top: 15px;left: 13px;}
+.f-icon-smart-hardware{background-position: -1px -247px;height: 36px;top: 11px;left: 18px;}
+.f-icon-audio{background-position: 0 -298px;height: 30px;top: 12px;left: 11px;}
+.f-icon-computer{background-position: 0 -346px;height: 32px;top: 13px;left: 13px;}
+.f-icon-automotive{background-position: 0 -393px;height: 22px;top: 18px;left: 9px;}
+.f-icon-more-brands{background-position: 0 -433px;height: 31px;top: 24px;left: 12px;}
+
+.coupon-bar{height: 104px;background-color: #e5e5e5;overflow: hidden;}
+.list-coupon{padding: 10px 0 0 10px;}
+.list-coupon li{float: left;width:238px;height: 87px; overflow: hidden;}
+.list-coupon .coupon{height: 87px;background: #ea5964 url(images/c.png) repeat-y right -2px;color: #fff;vertical-align: middle;line-height: 87px;}
+.list-coupon .darkBg{background-color: #d23f4b;}
+.list-coupon .mPrice{font-size: 58px;font-weight: bold;vertical-align: middle;margin:0 15px 0 35px;}
+.list-coupon .mPrice em{font-size: 46px;vertical-align: top;font-style: normal;*vertical-align: middle;}
+.list-coupon .priDes{width: 105px;font-size: 16px;vertical-align: middle;line-height: 1.1;}
+.list-coupon .couponCode{text-align: center;color: #3b3b3b;font-size: 14px;text-transform: uppercase;line-height: 1.1;}
+.list-coupon .cCode{font-size: 50px;font-weight: bold;}
+.list-coupon .mMargin .mPrice{margin:0 12px 0 20px;}
+
+.listFloat {margin-right: -30px;}
+.listFloat li{float: left;background:#fff url(http://img11.360buyimg.com/cms/jfs/t853/64/222820902/5860/54fc0ad5/550bc4d5N2164a1f4.gif) no-repeat center;overflow: hidden;}
+
+.list-brands li{width: 399px;height: 130px;margin: 0 1px 1px 0;}
+
+.list-morebrands li{width: 119px;height: 80px;margin: 0 1px 1px 0;}
+.it-more-brands .floor-main,.it-brand-events  .floor-main{background: none;}
+
+.jIcon{background-image: url(images/icon.png);background-repeat: no-repeat;}
+.list-moreLink{margin:60px -30px 10px 0;}
+.list-moreLink li{width: 393px;height: 60px;float: left;background-color: #dfba88;margin-right: 10px;text-align: center;line-height: 58px;}
+.list-moreLink li a{font-size: 18px;color: #fff;display: block;width: 393px;height: 60px;}
+.list-moreLink .item2{background-color: #7cafde;}
+.list-moreLink .item3{background-color: #c5b5d5;}
+.list-moreLink .icon-arrow{background-position:0 -469px;width: 8px;height: 13px;vertical-align: middle;margin-left: 5px;margin-bottom: 3px;}
+
+/*tab*/
+.j-tab-bar .j-tab-tit{height: 61px;background-color: #84d3d2;overflow: hidden;position: relative;}
+.j-tab-bar .list-tab-t{margin-right: -5px;font-size: 18px;padding-top: 3px;}
+.j-tab-bar .list-tab-t li{float: left;text-align: center;width: 100%;position: relative;}
+.j-tab-bar .list-tab-t a{color: #024746;display: block;line-height: 57px;height: 58px;margin-right: 1px;}
+.j-tab-bar .list-tab-t .current a,.j-tab-bar .list-tab-t a:hover,.j-tab-con{background-color: #fff;}
+
+.tab-type-2 .list-tab-t li{width: 50%;}
+.tab-type-3 .list-tab-t li{width: 33.33%;}
+.tab-type-4 .list-tab-t li{width: 25%;}
+.tab-type-5 .list-tab-t li{width: 19.7%;}
+.tab-type-6 .list-tab-t li{width: 16.62%;}
+.tab-type-7 .list-tab-t li{width: 14.25%;}
+.tab-type-8 .list-tab-t li{width: 12.46%;}
+
+.icon-jd{position: absolute;right: 0;bottom: 0;height: 20px;line-height: 20px;background-color: #84d3d2;color: #fff;padding: 0 8px;font-size: 12px;}
+.j-tab-bar .tab-con{display: none;min-height: 355px;text-align: left;}
+.j-tab-bar .tab-con.current{display: block;}
+
+.j-tab-bar li{font-size: 14px;position: relative;}
+.j-tab-bar .j-pic{margin-bottom: 10px;background:#fff url(http://img11.360buyimg.com/cms/jfs/t853/64/222820902/5860/54fc0ad5/550bc4d5N2164a1f4.gif) no-repeat center;position: relative;}
+.j-tab-bar .j-name{line-height: 1.3;height: 40px;overflow: hidden;display: block;text-overflow: ellipsis;}
+.j-tab-bar .j-points{display: block;height: 26px;overflow: hidden;font-weight: bold;}
+.j-tab-bar .j-nPice{color: #d23f4b;font-size: 18px;max-width: 84px;}
+.j-tab-bar .jPriceBar .dib{vertical-align:middle;max-width: 74px;overflow: hidden;}
+.j-tab-bar .j-oPrice{margin: 0 8px;}
+.j-tab-bar a{color: #3b3b3b;}
+
+.list-recommend {padding: 18px 0 0 18px;}
+.list-recommend li{width:220px;float: left;overflow: hidden;margin-right: 16px;}
+
+.list-recommend .j-pic{width: 216px;height: 216px;position: relative;}
+.list-recommend .j-discount{color: #076160;}
+
+.list-today-deals{margin-right: -20px;padding: 20px 0 0 20px;}
+.list-today-deals li{width: 275px;float: left;height: 372px;margin-right: 19px;}
+.list-today-deals li .j-pic{width: 275px;height: 275px;}
+.icon-discount{background:url(images/cc.png) no-repeat;width: 69px;height: 19px; text-align: center;color: #fff;line-height: 19px;overflow: hidden;}
+.list-today-deals .icon-discount{margin-right: 8px;} 
+
+.j-tab-timer{position: absolute;width: 200px;top: 0;right: 0;height: 61px;line-height: 61px;font-weight: bold;}
+.j-tab-timer .fText{color: #024746;font-weight: normal;}
+.current .j-tab-timer .fText{color: #84d3d2;}
+.j-tab-timer .dib{vertical-align: middle;}
+.j-tab-timer .ftime{height: 22px;line-height: 22px;background-color: #3b3b3b;color: #fff;padding:0 4px;margin:0 8px;font-weight: normal;font-size: 12px;}
+
+.list-today-deals .coming-mask{background: url(images/cm.png) no-repeat center;width: 275px;height: 275px;position: absolute;top: 0;left: 0;display: none;z-index: 1;}
+.list-today-deals li:hover .coming-mask{display: block;}
+.list-today-deals .j-status{background: url(images/so.png) no-repeat center;width: 275px;height: 275px;position: absolute;top: 0;left: 0;display: none;}
+.list-today-deals .jEnd .j-status{display: block;}
+.list-today-deals .jEnd .icon-discount{background-position: 0 -19px;}
+.list-today-deals .jEnd .j-nPice{color: #3b3b3b;}
+.list-today-deals .jEnd .j-name,.list-today-deals .jEnd .j-oPrice{color: #999;}
+
+.f-goodsBar{width: 995px;margin-left: 216px;}
+.list-jGoods{margin-right: -20px;}
+.list-jGoods li{float: left;width: 200px;height: 274px;border-right: 1px solid #f5f5f5;border-bottom: 1px solid #f5f5f5;}
+.list-jGoods li .j-pic{width: 162px;height: 162px;}
+.list-jGoods li a{padding: 20px 15px;display: block;}
+.list-jGoods li .j-nPice{font-size: 14px;}
+.list-jGoods .tItem1{width: 381px;height: 549px;border-right: 1px solid #f5f5f5;}
+.list-jGoods .tItem1 a{padding: 22px;}
+.list-jGoods .tItem1 .icon-jd{font-size: 14px;}
+.list-jGoods .tItem1 .j-pic{width: 334px;height: 334px;margin-bottom: 20px;margin-top: 15px;}
+.list-jGoods .tItem1 .j-points{font-size: 16px;margin-bottom: 10px;margin-top: 10px;}
+.list-jGoods .tItem1 .j-nPice{font-size: 24px;}
+.floor-adBar{position: absolute;left: 0;top: 0;width: 206px;height: 611px;background-color: #e5e5e5;}
+.f-goodsBar .tab-con{height: 550px;overflow: hidden;}
+
+.floor-adBar .ad-text{height: 78px;padding: 20px 20px 10px 20px;font-size: 22px;font-weight: bold;overflow: hidden;line-height: 1.3;text-transform: uppercase;}
+.floor-adBar .f-adText{margin: 20px;height: 112px;overflow: hidden;}
+.floor-adBar .list-adtext li{height: 23px;line-height: 23px;overflow: hidden;}
+.floor-adBar .f-adPic{height: 448px;overflow: hidden;}
+.floor-adBar .ad-pic{height: 340px;position: relative;}
+.floor-adBar .ad-pic img{position: absolute;left: 0;bottom: 0;}
+
+.list-best-selling{padding-bottom: 25px;margin-right: -20px;}
+.list-best-selling li{width: 395px;height: 170px;float: left;overflow: hidden;}
+.list-best-selling .j-pic{position: relative;width: 162px;height: 162px;background:#fff url(http://img11.360buyimg.com/cms/jfs/t853/64/222820902/5860/54fc0ad5/550bc4d5N2164a1f4.gif) no-repeat center;float: left;margin-right: 20px;}
+.list-best-selling .j-nPice{font-size: 14px;color: #d23f4b;}
+.list-best-selling .j-name{line-height: 1.3;height: 40px;overflow: hidden;display: block;text-overflow: ellipsis;padding-top: 45px;}
+.list-best-selling .jPriceBar .dib{vertical-align:middle;max-width: 74px;overflow: hidden;}
+.list-best-selling .j-oPrice{margin: 0 8px;}
+.list-best-selling  a{color: #3b3b3b;display: block;padding:0  30px;font-size: 14px;}
+.list-best-selling .item1,.list-best-selling .item2{border-right: 1px solid #f1f1f1;}
+.list-best-selling .icon-rank{position: absolute;top: 0;left: 0;background-position: 0 -509px;width: 42px;height: 45px;color: #fff;font-size: 16px;font-weight: bold;line-height: 50px;overflow: hidden;display: block;text-align: center;}
+.best-selling .tit-main{font-size: 24px;padding: 20px 0 5px 0;color: #3b3b3b;}
+.best-selling .tit-desc{font-size: 14px;color: #999;padding-bottom: 28px;}
+
+/*楼层广告位*/
+.it-smartphone .f-adPic{background-color: #ff8281;}
+.it-smartphone .ad-text{color:#cb3635; }
+.it-smart-hardware .f-adPic{background-color: #b4e269;}
+.it-smart-hardware .ad-text{color:#5c8407; }
+.it-audio .f-adPic{background-color: #caaa9f;}
+.it-audio .ad-text{color:#825140; }
+.it-computer .f-adPic{background-color: #882b2f;}
+.it-computer .ad-text{color:#bc8971; }
+.it-automotive .f-adPic{background-color: #5b4e45 ;}
+.it-automotive .ad-text{color:#947a71; }
+
+/*floating*/
+.f-floating{position: fixed;right: 200px;top: 500px;width: 50px;display: none;}
+.f-floating .fl-item{background-color: #fff;width: 48px;height: 48px;border-bottom: 1px solid #e5e5e5;position: relative;}
+.f-floating .floating-main ul{border: 1px solid #e5e5e5;border-bottom: none;}
+.f-floating .float-text{position: absolute;height: 50px;background-color: #e5e5e5;line-height: 50px;padding: 0 8px;right: 48px;top: -1px;white-space: nowrap;display: none;color: #076160;}
+.f-floating .fl-link{display: block;width: 48px;height: 48px;}
+.f-floating .fl-link:hover{background-color: #e5e5e5;}
+.f-floating .fl-link:hover .float-text{display: block;}
+.f-floating .jIcon{position: absolute;right: 0;top: 0;width: 48px;height: 48px;}
+.float-icon-Smartphone{background-position: 9px -571px;}
+.float-icon-Hardware{background-position: 9px -620px;}
+.float-icon-audio{background-position: 9px -674px;}
+.float-icon-computer{background-position: 9px -722px;}
+.float-icon-automotive{background-position: 9px -773px;}
+.f-floating .backTop{width: 48px;height: 48px;background: #fff url(images/t.png) no-repeat center;display: block;border: 1px solid #e5e5e5;margin-top: 10px;}
+
+
+
+
